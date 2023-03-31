@@ -2,6 +2,8 @@
 
 This is a Python (Pygame) implementation of the classic game Pong, originally released in 1972 by Atari. This version has additional features such as a difficulty setting, a win screen, and a screenline effect to simulate the look of an old monitor.
 
+![StartScreen of Pong](https://github.com/OstertO/Pong-1972/blob/main/pongStart.PNG)
+
 ## Getting Started
 
 To get started with this project, you'll need to have Python 3 and Pygame installed on your machine.
