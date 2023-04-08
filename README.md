@@ -10,7 +10,7 @@ To get started with this project, you'll need to have Python 3 and Pygame instal
 
 Once you have those dependencies installed, you can clone this repository to your local machine:
 
-    git clone https://github.com/OstertO/Pong-1972.git
+    git clone https://github.com/IO-I/Pong-1972.git
 
 Then, navigate to the Pong-1972 directory and run the pong.py file:
 
