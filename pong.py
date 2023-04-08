@@ -119,6 +119,13 @@ toStart = [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,
            [1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0],
            [0,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1,1,0,0,1,1,1,0,0,0,1,1,1,0,1,1,0,1,1,1,1,0,1,0,0,1,1]]
 
+toContinue = [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0],
+              [0,1,1,0,0,1,1,1,0,0,1,1,0,0,0,1,1,0,0,1,1,1,0,0,0,0,1,1,0,0,1,1,0,0,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1],
+              [1,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,1,0],
+              [1,1,1,1,0,1,1,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,1,1,1,0,1,1,1,0,1,0,0,1,1,1,1,0,1,0,0,1,0],
+              [1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0],
+              [0,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1,1,0,0,1,1,1,0,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,1,0,1,0,0,1,1]]
+
 won = [[1,0,0,0,0,0,1,0,0,0,1,1,0,0,0,1,0,0,1],
        [1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1],
        [0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,1,1,0,1],
@@ -134,7 +141,6 @@ playerFig = [[1,1,1,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,1,1,1,0,0,1,1,
              [1,0,0,0,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1],
              [1,0,0,0,0,0,1,1,1,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,1,1,1,0,0,1,0,0,1]]
 
-
 computerFig = [[0,1,1,1,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,1,1,1,0,0,1,0,0,1,0,0,1,1,1,1,1,0,0,1,1,1,1,0,0,1,1,1,1],
                [1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1],
                [1,0,0,0,0,0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1],
@@ -142,14 +148,6 @@ computerFig = [[0,1,1,1,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,1,1,1,0,0,1,0,0,1,0,0,1,
                [1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,1,0],
                [1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1],
                [0,1,1,1,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,1,0,0,0,0,1,1,1,1,0,0,1,0,0,1]]
-
-toContinue = [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0],
-              [0,1,1,0,0,1,1,1,0,0,1,1,0,0,0,1,1,0,0,1,1,1,0,0,0,0,1,1,0,0,1,1,0,0,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1],
-              [1,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,1,0],
-              [1,1,1,1,0,1,1,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,1,1,1,0,1,1,1,0,1,0,0,1,1,1,1,0,1,0,0,1,0],
-              [1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0],
-              [0,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1,1,0,0,1,1,1,0,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,1,0,1,0,0,1,1]]
-
 
 diffMap = [[1,0,0,1,0,1,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
            [1,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -230,14 +228,12 @@ def displayScore(playerScore, computerScore):
                     pygame.draw.rect(screen, white, pygame.Rect(i*squareDia+playerOffsetX, j*squareDia+compOffsetY, squareDia, squareDia))       
 
     if computerScore == 15:
-        
         winner = "comp"
         return(True)
     if playerScore == 15:
         winner = "play"
         return(True)
     return(winner)
-
 
 def drawMid():
     global WIDTH
@@ -330,12 +326,15 @@ class Ball:
     def draw(self):
         pygame.draw.rect(screen, white, pygame.Rect(self.x, self.y, self.w, self.w))
 
-
 player = Paddle(10, int(HEIGHT/2), 10, 50, "player")
 enemy = Paddle(WIDTH-20, int(HEIGHT/2), 10, 50, "computer")
 ball = Ball(int(WIDTH/2), int(HEIGHT/2), 10, ballSpeed, -ballSpeed)
 
-
+def renderText(array, xFactor, yFactor, w, h):
+    for j in range(len(array)):
+        for i in range(len(array[j])):
+            if array[j][i] == 1:
+                pygame.draw.rect(screen, white, pygame.Rect(i*w+xFactor, j*h+yFactor, w, h))
 
 while GameGoing:
     if state == 0:
@@ -359,18 +358,9 @@ while GameGoing:
                         diff = 0.96
                                    
         screen.fill(black)
-        for j in range(len(pong)):
-                for i in range(len(pong[j])):
-                    if pong[j][i] == 1:
-                        pygame.draw.rect(screen, white, pygame.Rect(i*pongSquareW+((WIDTH/2)-len(pong*pongSquareW)*1.55), j*pongSquareW+(HEIGHT/2)/3, pongSquareW, pongSquareW))
-        for j in range(len(toStart)):
-                for i in range(len(toStart[j])):
-                    if toStart[j][i] == 1:
-                        pygame.draw.rect(screen, white, pygame.Rect(i*startSquareW+((WIDTH/2)-len(toStart*startSquareW)*3.4), j*startSquareW+(HEIGHT/2), startSquareW, startSquareW))
-        for j in range(len(diffMap)):
-                for i in range(len(diffMap[j])):
-                    if diffMap[j][i] == 1:
-                        pygame.draw.rect(screen, white, pygame.Rect(i*startSquareW/2+((WIDTH/2)+130), j*startSquareW/2+(HEIGHT/1.45), startSquareW/2, startSquareW/2))
+        renderText(pong, pongSquareW+((WIDTH/2)-len(pong*pongSquareW)*1.55), pongSquareW+(HEIGHT/2)/3, pongSquareW, pongSquareW)
+        renderText(toStart, startSquareW+((WIDTH/2)-len(toStart*startSquareW)*3.4), startSquareW+(HEIGHT/2), startSquareW, startSquareW)
+        renderText(diffMap, startSquareW/2+((WIDTH/2)+130), startSquareW/2+(HEIGHT/1.45), startSquareW/2, startSquareW/2)
         screenLines()
         pygame.display.flip()
 
@@ -414,24 +404,12 @@ while GameGoing:
                         break
                   
             screen.fill(black)
-            for j in range(len(won)):
-                for i in range(len(won[j])):
-                    if won[j][i] == 1:
-                            pygame.draw.rect(screen, white, pygame.Rect(i*startSquareW+((WIDTH/2)-len(won*startSquareW)*1.5), j*startSquareW+(HEIGHT/2), startSquareW, startSquareW))
+            renderText(won, startSquareW+((WIDTH/2)-len(won*startSquareW)*1.5), startSquareW+(HEIGHT/2), startSquareW, startSquareW)
             if winner == "comp":
-                for j in range(len(computerFig)):
-                    for i in range(len(computerFig[j])):
-                        if computerFig[j][i] == 1:
-                            pygame.draw.rect(screen, white, pygame.Rect(i*startSquareW+((WIDTH/2)-len(computerFig*startSquareW)*3.4), j*startSquareW+(HEIGHT/4), startSquareW, startSquareW))
+                renderText(computerFig, startSquareW+((WIDTH/2)-len(computerFig*startSquareW)*3.4), startSquareW+(HEIGHT/4), startSquareW, startSquareW)
             if winner == "player":
-                for j in range(len(playerFig)):
-                    for i in range(len(playerFig[j])):
-                        if playerFig[j][i] == 1:
-                            pygame.draw.rect(screen, white, pygame.Rect(i*startSquareW+((WIDTH/2)-len(playerFig*startSquareW)*3), j*startSquareW+(HEIGHT/4), startSquareW, startSquareW))
-            for j in range(len(toContinue)):
-                for i in range(len(toContinue[j])):
-                    if toContinue[j][i] == 1:
-                            pygame.draw.rect(screen, white, pygame.Rect(i*startSquareW+((WIDTH/2)-len(toContinue*startSquareW)*4.3), j*startSquareW+(HEIGHT/1.3), startSquareW, startSquareW))
+                renderText(playerFig, startSquareW+((WIDTH/2)-len(playerFig*startSquareW)*3), startSquareW+(HEIGHT/4), startSquareW, startSquareW)
+            renderText(toContinue, startSquareW+((WIDTH/2)-len(toContinue*startSquareW)*4.3), startSquareW+(HEIGHT/1.3), startSquareW, startSquareW)
             screenLines()
             pygame.display.flip()
 pygame.quit()
