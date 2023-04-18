@@ -26,10 +26,8 @@ The game uses the mouses X location inside the window to position the players Pa
 
 ## Additional Features
 
-This implementation of Pong includes several additional features:
+This implementation of Pong includes additional features:
 
 - Difficulty setting: You can choose between Easy, Medium, and Hard difficulty levels.
     
 - Win screen: When a player wins the game, a win screen will appear to announce the winner.
-    
-- Screenline effect: The game screen has a screenline effect to simulate the look of an old monitor.
